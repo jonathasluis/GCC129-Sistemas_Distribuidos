@@ -24,10 +24,10 @@ public class EnviaComando implements Runnable {
             Scanner teclado = new Scanner(System.in);
             while (teclado.hasNextLine()) {
                 String linha = teclado.nextLine();
-                if (linha.trim().equals("")) {
+                if ("".equals(linha.trim())) {
                     saida.println(linha);
                     break;
-                }else{
+                } else {
                     saida.println(nome + " -> " + linha);
                 }
             }

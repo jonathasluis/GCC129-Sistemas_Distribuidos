@@ -3,19 +3,17 @@ package Server;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.net.Socket;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class DistribuirTarefas implements Runnable {
 
-    private Socket socket;
-    private ArrayList<Socket> lista;
-    private Servidor server;
+    private final Socket socket;
+    private final List<Socket> lista;
 
-    public DistribuirTarefas(Socket socket, ArrayList<Socket> lista, Servidor server) {
+    public DistribuirTarefas(Socket socket, List<Socket> lista) {
         this.socket = socket;
         this.lista = lista;
-        this.server = server;
     }
 
     @Override
