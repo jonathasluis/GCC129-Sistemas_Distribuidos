@@ -1,0 +1,3 @@
+[submodule "trabalho2/api-tarefas"]
+	path = trabalho2/api-tarefas
+	url = git@github.com:caiomtls/api-tarefas.git
